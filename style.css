@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background: hsl(223, 100%, 94%, 0.9);
+  background-image: url("./images/pattern-background-desktop.svg");
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 450px;
+  background-color: hsl(0, 0%, 100%);
+  align-items: center;
+  border-radius: 1rem;
+  padding: 0 1.8rem;
+  padding-bottom: 3rem;
+  box-shadow: rgba(105, 141, 230, 0.4) 4px 12px 24px;
+}
+img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+h1 {
+  padding-top: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+p {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6rem;
+  width: 80%;
+  color: hsl(224, 23%, 55%);
+}
+.container {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.annual-plan {
+  width: 90%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.music-icon {
+  float: left;
+  padding-right: 1rem;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.price {
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+a {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  float: right;
+  transform: translateY(-2rem);
+}
+a:hover {
+  text-decoration: none;
+  color: hsl(245, 61%, 67%);
+}
+button {
+  width: 90%;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: hsl(245, 75%, 86%) 0px 20px 28px, hsl(245, 75%, 80%) 0px 10px 10px;
+}
+button:hover {
+  text-decoration: none;
+  background-color: hsl(245, 61%, 67%);
+  cursor: pointer;
+}
+
+.cancel-order {
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  padding-top: 1rem;
+}
+.cancel-order:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+/* --------------------------------------- */
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: none;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .card {
+    width: 88%;
+    box-shadow: rgba(105, 141, 230, 0.4) 0cqb 0px 0px;
+    padding: 0 0.4rem;
+  }
+  img {
+    margin-left: -6px;
+    width: 104%;
+    margin-bottom: -1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    width: 86%;
+    font-size: 1rem;
+  }
+  .music-icon {
+    width: 70px;
+  }
+
+  .cancel-order {
+    padding-bottom: 2rem;
+  }
+
+  button {
+    margin-top: 0.2rem;
+  }
+  .annual-plan,
+  a {
+    font-size: 0.8rem;
+    margin-right: -10px;
+  }
+}
